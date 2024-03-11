@@ -1,0 +1,12 @@
+create database task;
+use task;
+create table students(Stu_id  int primary key ,name varchar(20),age int,course_id  int );
+insert into students(Stu_id,name,age,course_id)values(1,"abi",16,21),(2,"gaja",18,22),(3,"pooja",15,21),(4,"nisha",16,23);
+select*from students;
+use task;
+create table courses(course_id  int primary key ,course_name varchar(20),staff_name varchar(20));
+insert into courses(course_id  ,course_name, staff_name )values(21, "fsd", "priya"),(22, "ml", "kavipriya"),
+(23, "ai", "ramya"),(24, "Dataengineer", "kalaipriya");
+select s.name,s.course_id,c.course_name from students  as s inner join courses as c on s.course_id = c.course_id;
+select c.course_name from courses as c left join students as s on c.course_id=s.course_id where s.course_id is null;
+select c.course_name from courses as c  join students as s on c.course_id=s.course_id ;
