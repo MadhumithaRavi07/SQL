@@ -1,0 +1,8 @@
+create database Github;
+use Github;
+create table test1(stu_name varchar(20),stu_id int primary key,mark int);
+insert into test1(stu_name,stu_id,mark) values ("kunal", 25,45) ,("nandhi",26,48),("john",27,49);
+select*from test1;
+select stu_name from test1;
+-- where is used to pick or filter a records in the table (select*from table_name where conditions)--
+select*from test1 where mark=49;
