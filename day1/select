@@ -1,0 +1,7 @@
+create database Github;
+use Github;
+create table test1(stu_name varchar(20),stu_id int primary key,mark int);
+insert into test1(stu_name,stu_id,mark) values ("kunal", 25,45) ,("nandhi",26,48),("john",27,49);
+select*from test1;
+-- select is using to select a perticular coloumn or values in the table(select coloumn_name from table_name) --
+select stu_name from test1;
