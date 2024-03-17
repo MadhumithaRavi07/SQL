@@ -1,0 +1,18 @@
+-- type a comment content here -- = comment in sql
+-- database creation(create database database_name) --
+create database Github;
+-- using the created database(use database_name) --
+use Github;
+-- creating the table (create table table_name( values & datatypes))--
+-- datatype is varchar we fix the size of the values ex. student_name varchar(15)--
+-- primary key(it has the unique value& it should not be not null, only one coloumn could be a primary key in a table )
+create table test1(stu_name varchar(20),stu_id int primary key,mark int);
+-- insert the values into table(insert into table_name(coloumn name of table) values (values)) --
+
+insert into test1(stu_name,stu_id,mark) values ("kunal", 25,45) ,("nandhi",26,48),("john",27,49);
+-- select keyword is used to show the all details about the table --
+-- select*from table_name(* means select all the values,*=all) --
+select*from test1;
+-- drop database (drop database database_name),drop table (drop table table_name)--
+drop table test1;
+drop database Github;
